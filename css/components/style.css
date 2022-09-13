@@ -1,0 +1,136 @@
+main {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+    min-height: calc((var(--vh, 1vh) * 100));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+	background: rgb(255,255,255);
+background: linear-gradient(171deg, rgba(255,255,255,1) 49%, rgba(0,48,173,1) 70%);
+
+}
+.logo {
+	margin-bottom: 35px;
+}
+.star {
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 48px;
+	color: #0030AD;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.text p {
+	display: inline-block;
+}
+.text p img {
+	display: inline-block;
+	transform: translateY(43%);
+}
+main > .wrapper {
+	padding: 40px 0;
+	max-width: 690px;
+	margin-right: auto;
+	margin-left: 120px;
+}
+.link a {
+	background: #0BEDB9;
+	color: #0030AD;
+	font-weight: 700;
+	border-radius: 133px;
+	padding: 26px 90px;
+	display: inline-block;
+	font-size: 24px;
+	box-shadow: 0 0 0 2px rgba(11, 237, 185, 0.5)
+}
+.link a:hover {
+	background: #0BEDB9;
+	box-shadow: 0 0 0 7px rgba(11, 237, 185, 0.5)
+}
+.list {
+	margin-bottom: 50px;
+}
+.list li  {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 700
+}
+.list li img {
+	width: 1em;
+	height: 1em;
+	margin-right: 7px;
+}
+@media screen and (max-width: 991px) {
+	main {
+		background: rgb(255,255,255);
+		background: linear-gradient(171deg, rgba(255,255,255,1) 49%, rgba(0,48,173,1) 57%);
+
+	}
+	main > .wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex-grow: 1;
+		height: 100%;
+		padding: 100px 0 80px 0;
+		max-width: calc(100% - 40px);
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+	}
+	main .wrapper img {
+		margin: 0 auto;
+	}
+	.logo {
+		display: none;
+	}
+	.star {
+		margin-bottom: 16px;
+	}
+	.star img{
+		max-width: 96px;
+	}
+	.text {
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+	.text p {
+		max-width: 300px;
+	}
+	.text p img {
+		max-width: 94px;
+		margin-left: 5px;
+		transform: translateY(43%);
+	}
+	.link {
+		margin-top: auto;
+	}
+	.link a {
+		margin-top: auto;
+		padding: 20px 66px;
+		font-size: 18px;
+	}
+	.list {
+		max-width: 205px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.list li  {
+		font-size: 14px;
+		text-align: left;
+	}
+	.list li img {
+		margin-left: 0;
+		margin-right: 7px;
+	}
+
+	
+}
+
+
